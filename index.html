@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6007e46b8a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <br></br>
+            <h1>Pomodoro</h1>
+            
+            <div class="painel">
+                <p id="work" class="active">Work</p>
+                <p id="break">Break</p>
+            </div>
+
+            <div class="timer">
+                <div class="circle">
+                    <div class="time">
+                        <p id="minutes">25</p>
+                        <p>:</p>
+                        <p id="seconds">00</p>
+                    </div>
+                </div>
+            </div>
+            <br></br>
+            <p class="progress-label">YOUR PROGRESS:</p>
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+            <!-- Session Counters -->
+            <div class="session-counter">
+                
+                <p>Work Sessions Completed: <span id="break-sessions-completed">0</span></p>
+                <p>Break Sessions Completed: <span id="work-sessions-completed">0</span></p>
+            </div>
+            <!-- Controls -->
+            <div class="controls">
+                <button id="start" onclick="start()"><i class="fa-solid fa-play"></i></button>
+                <a id="reset" href="/"><i class="fa-solid fa-arrow-rotate-left"></i></a>
+            </div>
+        </div>
+        
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
